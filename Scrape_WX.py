@@ -26,9 +26,9 @@ parser.add_argument('-d', '--day', default=1, help='Day')
 args = parser.parse_args()
 
 station_id = args.station_id
-year = '{:4d}'.format(args.year)
-mo = '{:02d}'.format(args.month)
-dy = '{:02d}'.format(args.day)
+year = f"{int(args.year):04d}"
+mo = f"{int(args.month):02d}"
+dy = f"{int(args.day):02d}"
 
 date=year + '-' + mo + '-' + dy
 
